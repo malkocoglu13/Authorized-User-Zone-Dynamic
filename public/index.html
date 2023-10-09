@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Secrets</title>
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Secrets</h1>
+    <form action="/check" method="POST" id="loginForm">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <input type="submit" value="Submit">
+    </form>
+    <h2 class="instructions">
+      Successful Login: Use <span class="password">ILoveProgramming</span> as the password.
+    </h2>
+    <h2 class="instructions">
+      Unsuccessful Login: Input the wrong password and see a warning.
+    </h2>
+    
+
+    <!-- Section to display an error message -->
+    <div id="errorMessage" style="color: red; display: none;">
+      Access Denied. Please enter the correct password and try again.
+    </div>
+  </div>
+
+  <script src="./js/redirect.js"></script>
+  <footer>
+    Made with ❤️ by Burak
+      </footer>
+</body>
+
+</html>
